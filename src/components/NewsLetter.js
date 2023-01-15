@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const NewsLetter = () => {
@@ -16,7 +17,7 @@ const NewsLetter = () => {
             <div className='items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0'>
               <div className='relative w-full'>
                 <label
-                  for='email'
+                  htmlFor='email'
                   className='hidden mb-2 text-sm font-medium text-white'
                 >
                   Email address
@@ -33,7 +34,7 @@ const NewsLetter = () => {
                   </svg>
                 </div>
                 <input
-                  class='block p-3 pl-10 w-full text-sm rounded-lg border sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 bg-white border-white placeholder-black text-black dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                  className='block p-3 pl-10 w-full text-sm rounded-lg border sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 bg-white border-white placeholder-black text-black dark:focus:ring-blue-500 dark:focus:border-blue-500'
                   placeholder='Enter your email'
                   type='email'
                   id='email'
@@ -43,20 +44,20 @@ const NewsLetter = () => {
               <div>
                 <button
                   type='submit'
-                  class='py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer border-blue-600 sm:rounded-none sm:rounded-r-lg bg-blue-600 hover:bg-primary-700 focus:ring-blue-800'
+                  className='py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer border-blue-600 sm:rounded-none sm:rounded-r-lg bg-blue-600 hover:bg-primary-700 focus:ring-blue-800'
                 >
                   Subscribe
                 </button>
               </div>
             </div>
-            <div class='mx-auto max-w-screen-sm text-sm text-left text-white'>
+            <div className='mx-auto max-w-screen-sm text-sm text-left text-white'>
               We care about the protection of your data.{' '}
-              <a
+              <Link
                 href='#'
-                class='font-medium text-primary-600 dark:text-primary-500 hover:underline'
+                className='font-medium text-primary-600 dark:text-primary-500 hover:underline'
               >
                 Read our Privacy Policy
-              </a>
+              </Link>
               .
             </div>
           </form>

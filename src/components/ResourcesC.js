@@ -6,20 +6,23 @@ const ResourcesC = () => {
   return (
     <section className='bg-white'>
       <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
-        <div class='mx-auto max-w-screen-md text-center mb-8 lg:mb-12'>
-          <h2 class='mb-4 text-4xl tracking-tight font-extrabold text-slate-900'>
+        <div className='mx-auto max-w-screen-md text-center mb-8 lg:mb-12'>
+          <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-slate-900'>
             Resources
           </h2>
-          <p class='mb-5 font-light text-slate-500 sm:text-xl'>
+          <p className='mb-5 font-light text-slate-500 sm:text-xl'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
             eius incidunt aliquam animi in iure?
           </p>
         </div>
         <div className='space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0'>
-          {featureLink.map((f) => {
+          {featureLink.map((f, index) => {
             const { image, title, desc } = f
             return (
-              <div className='bg-white shadow-md border border-gray-200 max-w-sm mb-5 rounded-2xl'>
+              <div
+                className='bg-white shadow-md border border-gray-200 max-w-sm mb-5 rounded-2xl'
+                key={index}
+              >
                 <Link href='/resources'>
                   <img src={image} alt={title} className='rounded-2xl' />
                 </Link>

@@ -55,6 +55,19 @@ const footerLink = [
     ],
   },
   {
+    title: 'Promotion',
+    links: [
+      {
+        name: 'Bonus',
+        link: '/',
+      },
+      {
+        name: 'Discount',
+        link: '/',
+      },
+    ],
+  },
+  {
     title: 'Company',
     links: [
       {
@@ -83,20 +96,6 @@ const footerLink = [
       },
       {
         name: 'Career',
-        link: '/',
-      },
-    ],
-  },
-
-  {
-    title: 'Promotion',
-    links: [
-      {
-        name: 'Bonus',
-        link: '/',
-      },
-      {
-        name: 'Discount',
         link: '/',
       },
     ],

@@ -8,7 +8,7 @@ const BreadCrumb = () => {
         <li className='inline-flex items-center'>
           <Link
             href='/'
-            class='inline-flex items-center text-sm font-extralight hover:text-blue-600 text-slate-200'
+            className='inline-flex items-center text-sm font-extralight hover:text-blue-600 text-slate-200'
           >
             Home
           </Link>

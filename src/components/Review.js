@@ -5,11 +5,11 @@ const Review = () => {
   return (
     <section className='bg-white'>
       <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
-        <div class='mx-auto max-w-screen-md text-center mb-8 lg:mb-12'>
-          <h2 class='mb-4 text-4xl tracking-tight font-extrabold text-slate-900'>
+        <div className='mx-auto max-w-screen-md text-center mb-8 lg:mb-12'>
+          <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-slate-900'>
             What Our Customer Say?
           </h2>
-          <p class='mb-5 font-light text-slate-500 sm:text-xl'>
+          <p className='mb-5 font-light text-slate-500 sm:text-xl'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
             eius incidunt aliquam animi in iure?
           </p>
