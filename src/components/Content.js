@@ -6,10 +6,13 @@ const Content = () => {
   return (
     <section className='py-8 px-12 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
       <div className='space-y-8 md:mx-16 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0'>
-        {featureLink.map((f) => {
+        {featureLink.map((f, index) => {
           const { image, title, desc } = f
           return (
-            <div className='bg-white mx-auto shadow-md border border-gray-200 max-w-sm mb-5 rounded-2xl'>
+            <div
+              className='bg-white mx-auto shadow-md border border-gray-200 max-w-sm mb-5 rounded-2xl'
+              key={index}
+            >
               <Link href='/resources'>
                 <img src={image} alt={title} className='rounded-2xl' />
               </Link>
