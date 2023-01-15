@@ -10,9 +10,11 @@ import Content from './Content'
 import Review from './Review'
 import NewsLetter from './NewsLetter'
 import BreadCrumb from './BreadCrumb'
+import SearchBox from './SearchBox'
 export {
   Layout,
   Footer,
+  SearchBox,
   Header,
   Hero,
   Cta,
