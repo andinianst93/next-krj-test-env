@@ -6,11 +6,11 @@ const Why = () => {
   return (
     <section className='bg-white md:py-12 md:px-32 p-8'>
       <div className=' m-auto max-w-full md:w-[95vw] md:grid md:grid-flow-col md:grid-cols-2'>
-        <article className='self-center'>
+        <article className='self-center max-w-lg mx-auto'>
           <Image
             src={why}
             alt='why'
-            width={350}
+            width={450}
             height={75}
             className='rounded-md'
           />

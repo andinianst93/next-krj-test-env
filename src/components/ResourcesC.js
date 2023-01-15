@@ -5,8 +5,8 @@ import Link from 'next/link'
 const ResourcesC = () => {
   return (
     <section className='bg-white'>
-      <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
-        <div className='mx-auto max-w-screen-md text-center mb-8 lg:mb-12'>
+      <div className='py-8 px-4 mx-auto max-w-screen-xl md:py-16 md:px-6'>
+        <div className='mx-auto max-w-screen-md text-center mb-8 md:mb-12'>
           <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-slate-900'>
             Resources
           </h2>
@@ -15,7 +15,7 @@ const ResourcesC = () => {
             eius incidunt aliquam animi in iure?
           </p>
         </div>
-        <div className='space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0'>
+        <div className='space-y-8 mx-auto lg:grid lg:grid-cols-3 sm:gap-6 md:gap-10 md:space-y-0'>
           {featureLink.map((f, index) => {
             const { image, title, desc } = f
             return (
