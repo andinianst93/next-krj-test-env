@@ -1,9 +1,13 @@
 import React from 'react'
 import HeaderC from '@/components/HeaderC'
 import { Content, NewsLetter, SearchBox } from '@/components'
+import { PageSEO } from '@/components/SEO'
+
 const Resources = () => {
   return (
     <>
+      <PageSEO title='Resources' description='Testing only' />
+
       <HeaderC />
       <SearchBox />
       <Content />

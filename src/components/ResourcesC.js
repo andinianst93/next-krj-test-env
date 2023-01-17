@@ -8,7 +8,7 @@ const ResourcesC = () => {
       <div className='py-8 px-4 mx-auto max-w-screen-xl md:py-16 md:px-6'>
         <div className='mx-auto max-w-screen-md text-center mb-8 md:mb-12'>
           <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-slate-900'>
-            Resources
+            Recent Post
           </h2>
           <p className='mb-5 font-light text-slate-500 sm:text-xl'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur

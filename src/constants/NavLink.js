@@ -1,28 +1,23 @@
 const navlink = [
   {
     id: 1,
-    text: 'Platform',
-    url: '/platform',
+    text: 'SEO',
+    url: '/seo',
   },
   {
     id: 2,
-    text: 'Solutions',
-    url: '/solutions',
+    text: 'Social',
+    url: '/social',
   },
   {
     id: 3,
-    text: 'Resources',
-    url: '/resources',
+    text: 'Paid',
+    url: '/paid',
   },
   {
     id: 4,
-    text: 'Pricing',
-    url: '/pricing',
-  },
-  {
-    id: 5,
-    text: 'Company',
-    url: '/company',
+    text: 'Web Dev',
+    url: '/web-dev',
   },
 ]
 export default navlink

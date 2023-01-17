@@ -43,7 +43,7 @@ const Header = () => {
                 <li key={id}>
                   <Link
                     href={url}
-                    className='block py-2 pl-3 pr-4 text-white text-base rounded md:bg-transparent md:p-0'
+                    className='block py-2 pl-3 pr-4 text-white text-lg rounded md:bg-transparent md:p-0'
                   >
                     {text}
                   </Link>

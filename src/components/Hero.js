@@ -15,7 +15,7 @@ const Hero = () => {
             deleniti!
           </p>
           <Link
-            href='#'
+            href='/contact'
             className='inline-flex text-white items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg bg-blue-700 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300'
           >
             Get started
@@ -31,12 +31,6 @@ const Hero = () => {
                 clipRule='evenodd'
               ></path>
             </svg>
-          </Link>
-          <Link
-            href='#'
-            className='inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white border border-gray-300 rounded-lg hover:bg-gray-400 focus:ring-4 focus:ring-gray-100'
-          >
-            Speak to Sales
           </Link>
         </div>
         <div className='hidden lg:mt-0 lg:col-span-5 lg:flex'></div>
