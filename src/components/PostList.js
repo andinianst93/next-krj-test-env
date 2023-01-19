@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import MainContent from '../constants/MainContent'
 import featureLink from '../constants/FeatureLink'
-const Header2 = () => {
+const PostList = () => {
   return (
     <section className='px-8 py-6 lg:py-6 mx-auto xl:px-5 max-w-screen-xl'>
       <div className='grid gap-10 lg:gap-10 md:grid-cols-2'>
@@ -18,13 +18,13 @@ const Header2 = () => {
                 <img src={image} alt={title} className='rounded-2xl w-full' />
               </Link>
               <Link href='#'>
-                <span className='inline-block mx-5 mt-5 text-base font-medium uppercase'>
+                <p className='inline-block mx-5 mt-4 text-base font-medium uppercase text-blue-800'>
                   {category}
-                </span>
+                </p>
               </Link>
-              <div className='p-5'>
+              <div className='px-5 py-2'>
                 <Link href='#'>
-                  <h3 className='text-slate-900 font-medium text-xl tracking-tight mb-2'>
+                  <h3 className='text-slate-900 text-xl font-semibold tracking-tight mb-2'>
                     {title}
                   </h3>
                 </Link>
@@ -56,13 +56,13 @@ const Header2 = () => {
                   <img src={image} alt={title} className='rounded-2xl' />
                 </Link>
                 <Link href='#'>
-                  <span className='inline-block mx-5 mt-5 text-base font-medium uppercase'>
+                  <span className='inline-block mx-5 mt-4 text-base font-medium uppercase text-blue-800'>
                     {category}
                   </span>
                 </Link>
-                <div className='px-5 py-4'>
+                <div className='px-5 py-2'>
                   <Link href='/resources'>
-                    <h3 className='text-slate-900 font-medium text-xl tracking-tight mb-2'>
+                    <h3 className='text-slate-900 font-semibold text-xl tracking-tight mb-2'>
                       {title}
                     </h3>
                   </Link>
@@ -86,4 +86,4 @@ const Header2 = () => {
   )
 }
 
-export default Header2
+export default PostList
