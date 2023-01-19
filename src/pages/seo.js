@@ -6,7 +6,7 @@ import { PageSEO } from '@/components/SEO'
 const Resources = () => {
   return (
     <>
-      <PageSEO title='Resources' description='Testing only' />
+      <PageSEO title='SEO' description='Testing only' />
 
       <HeaderC />
       <SearchBox />

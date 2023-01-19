@@ -2,6 +2,7 @@ import Layout from './Layout'
 import Footer from './Footer'
 import Header from './Header'
 import HeaderC from './HeaderC'
+import PostList from './PostList'
 import Hero from './Hero'
 import Cta from './Cta'
 import Why from './Why'
@@ -20,6 +21,7 @@ export {
   Cta,
   Why,
   HeaderC,
+  PostList,
   ResourcesC,
   Content,
   Review,

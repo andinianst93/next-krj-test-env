@@ -7,29 +7,35 @@ const Content = () => {
     <section className='py-8 px-12 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
       <div className='space-y-8 md:mx-16 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0'>
         {featureLink.map((f, index) => {
-          const { image, title, desc } = f
+          const { image, title, desc, category, authorImg, authorName } = f
           return (
             <div
-              className='bg-white mx-auto shadow-md border border-gray-200 max-w-sm mb-5 rounded-2xl'
+              className='bg-white border border-gray-200 max-w-screen-xl mb-5 rounded-2xl'
               key={index}
             >
-              <Link href='/resources'>
+              <Link href='#'>
                 <img src={image} alt={title} className='rounded-2xl' />
               </Link>
-              <div className='p-5 mx-auto'>
+              <Link href='#'>
+                <span className='inline-block mx-5 mt-5 text-base font-medium uppercase'>
+                  {category}
+                </span>
+              </Link>
+              <div className='px-5 py-4'>
                 <Link href='/resources'>
-                  <h3 className='text-slate-900 font-medium text-xl mb-2'>
+                  <h3 className='text-slate-900 font-medium text-xl tracking-tight mb-2'>
                     {title}
                   </h3>
                 </Link>
                 <p className='font-normal text-slate-700 mb-3'>{desc}</p>
-                <div className='mx-auto'>
-                  <button
-                    type='button'
-                    className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0'
-                  >
-                    Free Download
-                  </button>
+                <div className='flex items-center mt-3 space-x-3 text-gray-500'>
+                  <div className='flex items-center gap-3'>
+                    <span className='text-sm'>{authorName}</span>
+                  </div>
+                  <span className='text-xs text-gray-300 dark:text-gray-600'>
+                    &bull;
+                  </span>
+                  <p className='text-sm'>24 January 2022</p>
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@ const footerLink = [
   },
   {
     id: 2,
-    text: 'Contact',
+    text: 'Contact Us',
     url: '/contact',
   },
   {
@@ -21,8 +21,8 @@ const footerLink = [
   },
   {
     id: 5,
-    text: 'Kolaborasi',
-    url: '/kolaborasi',
+    text: 'Partnership',
+    url: '/partnership',
   },
 ]
 

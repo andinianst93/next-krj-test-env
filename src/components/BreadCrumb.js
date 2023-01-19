@@ -20,7 +20,7 @@ const BreadCrumb = () => {
               href='#'
               className='ml-1 text-sm font-medium  md:ml-2 text-slate-200'
             >
-              Resources
+              SEO
             </Link>
           </div>
         </li>
