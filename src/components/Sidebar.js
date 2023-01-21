@@ -15,7 +15,7 @@ const Sidebar = () => {
           : 'ease-out duration-300 fixed left-[-100%] '
       }
     >
-      <div className='flex justify-end'>
+      <div className='flex justify-end pt-4'>
         <button onClick={toggleLinks}>
           <FaTimes className='text-2xl text-red-400' />
         </button>
@@ -28,7 +28,7 @@ const Sidebar = () => {
             key={index}
           >
             <ul key={index} className='flex flex-col'>
-              <li className='px-4 py-4 text-xl font-bold text-gray-100 hover:text-blue-500'>
+              <li className='px-4 py-4 text-xl font-bold text-gray-100'>
                 <button className='flex items-center justify-between'>
                   {name}
                 </button>
@@ -45,7 +45,7 @@ const Sidebar = () => {
                             <li key={index} className='text-base'>
                               <Link
                                 href={tautan.link}
-                                className='flex items-center gap-x-2 text-gray-100 hover:text-blue-500 group pb-2 font-thin'
+                                className='flex items-center gap-x-4 text-gray-100 hover:text-blue-500 group pb-2 font-thin'
                               >
                                 {tautan.icon}
                                 {tautan.name}
