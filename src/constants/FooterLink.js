@@ -19,11 +19,11 @@ const footerLink = [
     text: 'Privacy Policy',
     url: '/privacy',
   },
-  {
-    id: 5,
-    text: 'Partnership',
-    url: '/partnership',
-  },
+  // {
+  //   id: 5,
+  //   text: 'Partnership',
+  //   url: '/partnership',
+  // },
 ]
 
 export default footerLink

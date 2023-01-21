@@ -4,14 +4,12 @@ import {
   FaLaptopCode,
   FaLink,
   FaWordpress,
-  FaReact,
-  FaHtml5,
   FaFacebookSquare,
   FaInstagramSquare,
   FaTiktok,
   FaGoogle,
-  FaPhotoVideo,
   FaEdit,
+  FaCode,
 } from 'react-icons/fa'
 
 const subLinks = [
@@ -40,11 +38,6 @@ const subLinks = [
             name: 'Content Marketing',
             link: '/content-marketing',
             icon: <FaEdit />,
-          },
-          {
-            name: 'Video Marketing',
-            link: '/video-marketing',
-            icon: <FaPhotoVideo />,
           },
         ],
       },
@@ -80,9 +73,8 @@ const subLinks = [
       {
         Head: 'Website',
         sublink: [
+          { name: 'Tips & Trik', link: '/tips-website', icon: <FaCode /> },
           { name: 'Wordpress', link: '/wordpress', icon: <FaWordpress /> },
-          { name: 'Frameworks', link: '/frameworks', icon: <FaReact /> },
-          { name: 'HTML & CSS', link: '/html-css', icon: <FaHtml5 /> },
         ],
       },
     ],
