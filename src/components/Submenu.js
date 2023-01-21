@@ -9,19 +9,16 @@ const Submenu = () => {
         const { name, submenu } = item
         return (
           <div className='md:cursor-pointer group' key={index}>
-            <ul
-              className='flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0'
-              key={index}
-            >
+            <ul className='md:flex-row md:space-x-8 md:mt-0' key={index}>
               <li className='p-4 relative'>
-                <button className='relative w-[100%] py-[10px] px-[20px] text-white text-lg rounded md:bg-transparent md:p-0 md:flex md:items-center md:justify-between '>
+                <button className='text-white text-lg md:rounded md:bg-transparent md:p-0 md:flex md:items-center md:justify-between '>
                   {name} <FaAngleDown className='pl-2' />
                 </button>
               </li>
             </ul>
             {item.submenu && (
               <div>
-                <div className='absolute top-16 hidden group-hover:md:block hover:md:block'>
+                <div className='md:absolute md:top-16 md:hidden group-hover:md:block hover:md:block'>
                   <div className='border-gray-700 bg-gray-700 p-4 grid grid-cols-1 gap-10 w-max text-sm rounded-lg shadow-md'>
                     {item.sublinks.map((i, index) => {
                       return (

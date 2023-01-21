@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { useGlobalContext } from '@/context/context'
 import Submenu from './Submenu'
+
 const Header = () => {
-  const { isSidebarOpen, openSidebar } = useGlobalContext()
+  const { toggleLinks } = useGlobalContext()
 
   return (
-    <nav className='md:px-16 px-6 py-4 z-20 top-0 left-0 shadow-sm bg-slate-900'>
+    <nav className='md:px-16 px-6 py-4 shadow-sm bg-slate-900'>
       <div className='flex flex-wrap items-center justify-between max-w-screen-xl mx-auto'>
         <Link href='/' className='flex items-center'>
           <span className='self-center text-3xl font-semibold text-white'>
@@ -23,7 +24,8 @@ const Header = () => {
           {/* humberger menu */}
           <button
             type='button'
-            className='inline-flex items-center p-2 text-sm text-gray-300 bg-transparent rounded-lg md:hidden'
+            className='block items-center p-2 text-sm text-gray-300 bg-transparent rounded-lg md:hidden'
+            onClick={toggleLinks}
           >
             <svg
               className='w-6 h-6'
