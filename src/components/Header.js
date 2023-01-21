@@ -1,22 +1,26 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import navlink from '../constants/NavLink'
+import { useGlobalContext } from '@/context/context'
+import Submenu from './Submenu'
 const Header = () => {
+  const { isSidebarOpen, openSidebar } = useGlobalContext()
+
   return (
     <nav className='md:px-16 px-6 py-4 z-20 top-0 left-0 shadow-sm bg-slate-900'>
-      <div className='flex flex-wrap items-center justify-between mx-auto'>
+      <div className='flex flex-wrap items-center justify-between max-w-screen-xl mx-auto'>
         <Link href='/' className='flex items-center'>
           <span className='self-center text-3xl font-semibold text-white'>
             Hello
           </span>
         </Link>
-        <div className='flex md:order-2'>
+        <div className='flex items-center md:order-2'>
           <button
             type='button'
             className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0'
           >
             Register / Login
           </button>
+          {/* humberger menu */}
           <button
             type='button'
             className='inline-flex items-center p-2 text-sm text-gray-300 bg-transparent rounded-lg md:hidden'
@@ -32,25 +36,8 @@ const Header = () => {
             </svg>
           </button>
         </div>
-        <div
-          className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1'
-          id='navbar-sticky'
-        >
-          <ul className='flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0'>
-            {navlink.map((nav) => {
-              const { id, text, url } = nav
-              return (
-                <li key={id}>
-                  <Link
-                    href={url}
-                    className='block py-2 pl-3 pr-4 text-white text-lg rounded md:bg-transparent md:p-0'
-                  >
-                    {text}
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
+        <div className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1"'>
+          <Submenu />
         </div>
       </div>
     </nav>

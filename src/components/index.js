@@ -12,10 +12,14 @@ import Review from './Review'
 import NewsLetter from './NewsLetter'
 import BreadCrumb from './BreadCrumb'
 import SearchBox from './SearchBox'
+import Sidebar from './Sidebar'
+import Submenu from './Submenu'
 export {
   Layout,
   Footer,
   SearchBox,
+  Sidebar,
+  Submenu,
   Header,
   Hero,
   Cta,
