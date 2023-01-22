@@ -12,17 +12,12 @@ const CommonSEO = ({
   const router = useRouter()
   return (
     <Head>
-      <title>Hello: Testing a New Site</title>
+      <title>{title}</title>
       <meta name='robots' content='follow, index' />
-      <meta name='description' content='This is for testing only' />
+      <meta name='description' content={description} />
     </Head>
   )
 }
 export const PageSEO = ({ title, description }) => {
-  return (
-    <CommonSEO
-      title='Hello: Web For Testing Only'
-      description='Testing only website by Andini.'
-    />
-  )
+  return <CommonSEO title={title} description={description} />
 }

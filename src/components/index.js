@@ -14,9 +14,11 @@ import BreadCrumb from './BreadCrumb'
 import SearchBox from './SearchBox'
 import Sidebar from './Sidebar'
 import Submenu from './Submenu'
+import Image from './image'
 export {
   Layout,
   Footer,
+  Image,
   SearchBox,
   Sidebar,
   Submenu,

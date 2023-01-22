@@ -1,12 +1,12 @@
 const footerLink = [
   {
     id: 1,
-    text: 'About Us',
+    text: 'Tentang Kami',
     url: '/about',
   },
   {
     id: 2,
-    text: 'Contact Us',
+    text: 'Hubungi Kami',
     url: '/contact',
   },
   {
@@ -16,7 +16,7 @@ const footerLink = [
   },
   {
     id: 4,
-    text: 'Privacy Policy',
+    text: 'Kebijakan Privasi',
     url: '/privacy',
   },
   // {

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 Link
-const BreadCrumb = () => {
+const BreadCrumb = ({ title }) => {
   return (
     <div className='flex justify-center items-center pb-4'>
       <ol className='inline-flex items-center space-x-1 md:space-x-3'>
@@ -16,12 +16,9 @@ const BreadCrumb = () => {
         <li>
           <div className='flex items-center'>
             <span className='text-white'>/</span>
-            <Link
-              href='#'
-              className='ml-1 text-sm font-medium  md:ml-2 text-slate-200'
-            >
-              SEO
-            </Link>
+            <span className='ml-1 text-sm font-medium  md:ml-2 text-slate-200'>
+              {title}
+            </span>
           </div>
         </li>
       </ol>
